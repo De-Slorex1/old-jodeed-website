@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Jodeed Website</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="navlink">
+                <nav>
+                    <img src="asset/images/jt.png" width="120px" height="120px" alt="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <a class="btn" href="www.gmail.com">Sign In</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="swiper-slide first">
+                    <div class="content-first">
+                        <h2>ENJOY THE BEST DESTINATION WITH OUR TRAVEL AGENCY</h2>
+                        <h1>
+                            <sapn style="font-weight: 100;">Explore</sapn> The World</h1>
+                        <a class="tour" href="#">Book Your Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide second">
+                    <div class="content-second">
+                        <h2>A TEAM OF PROFESSIONAL TRAVEL EXPERT</h2>
+                        <h1>
+                            <span style="font-weight: 100;">Trust</span> Our Experience</h1>
+                        <a class="tour" href="#">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide third">
+                    <div class="content-third">
+                        <h2>PLAN YOUR NEXT HOLIDAY WITH US</h2>
+                        <h1><span style="font-weight: 100;">Create</span> Your Tour</h1>
+                        <a class="tour" href="#">TAKE A Tour</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="swiper-slide fourth">
+                    <div class="content-fourth">
+                        <h2>PLAN YOUR NEXT TRAVEL WITH US</h2>
+                        <h1>
+                            <span style="font-weight: 100;">Jodeed</span> Travels Limited</h1>
+                        <a class="tour" href="#">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div class="background"></div>
+    <div class="travel-info">
+        <form action="" method="">
+            <div class="block">
+                <label>Start Day</label><br><br>
+                <input type="date" placeholder="" class="input">
+            </div>
+            <div class="block">
+                <label>Return Day</label><br><br>
+                <input type="date" placeholder="" value="" class="input ">
+            </div>
+            <div class="block ">
+                <label>Where To</label><br><br>
+                <select name="countries" id="countries">
+                    <option value="United State ">United State</option>
+                    <option value="Canada ">Canada</option>
+                    <option value="New York ">New York</option>
+                    <option value="Dubai ">Dubai</option>
+                    <option value="Nigeria ">Nigeria</option>
+                    <option value="Australia ">Australia</option>
+                    <option value="Tanzania ">Tanzania</option>
+                    <option value="Jamaica ">Jamaica</option>
+                    <option value="Maldives ">Maldives</option>
+                    <option value="Botswana ">Botswana</option>
+                    <option value="Kenya ">Kenya</option>
+                </select>
+                <p id="demo"></p>
+            </div>
+        </form>
+    </div>
+    <script src="swiper-bundle.min.js "></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper ", {
+            navigation: {
+                nextEl: ".swiper-button-next ",
+                prevEl: ".swiper-button-prev ",
+            },
+            autoplay: {
+                delay: 3200,
+                disableOnInteraction: false,
+            },
+        });
+        /*var select = document.getElementById("countries");
+        select.addEventListener("change", function() {
+            var val = document.getElementById("countries");
+            document.getElementById("demo").innerHTML = val;
+        });*/
+    </script>
+</body>
+
+</html>
+
+</html>
